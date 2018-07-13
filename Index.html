@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Gaegu|Markazi+Text" rel="stylesheet">
+    <meta charset="utf-8">
+    <title></title>
+<style media="screen">
+body
+{
+  margin: 0;
+  background: url("assets/fondo.jpg");
+}
+  header
+  {
+    background: rgba(0,0,0,0.8);
+  }
+  .menu
+  {
+    padding: 0;
+  }
+  .menu ul
+  {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+  }
+  .menu li
+  {
+    list-style: none;
+    border: 6px solid #563f0f;
+    border-left: 3px solid #563f0f;
+    background: black;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    transition: .5s;
+  }
+  .menu ul li:hover
+  {
+    background: gold;
+    cursor: pointer;
+  }
+  .menu ul li a
+  {
+    text-decoration: none;
+    color: white;
+    font-family: 'Gaegu';
+  }
+  .logotipo
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px;S
+  }
+  .logotipo #yo
+  {
+    width: 50%;
+    height: 50%;
+    border: 5px solid white;
+    border-radius: 200px;
+    transition: .4s;
+  }
+  .logotipo #yo:hover
+  {
+    transform: scale(1.2);
+  }
+  .logotipo h1
+  {
+    color: white;
+    font-family: 'Gaegu';
+  }
+  .columnas
+  {
+    background: white;
+    display: flex;
+  }
+  .columnas img
+   {
+    height: 30%;
+   }
+   .columnas div
+   {
+     background:yellow;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 20px;
+     margin:30px;
+     height: 315px;
+     width: 50%;
+   }
+   .columnas div h1, .columnas div h3
+   {
+     font-family: 'Gaegu';
+     height: 70px;
+     text-align: center;
+   }
+   .columnas button
+   {
+     width: 100%;
+
+     border: 0;
+     background: linear-gradient(to left, black, #fafafa);
+     box-shadow: 5px 6px 18px -3px;
+     padding: 10px;
+     border-radius: 15px;
+     color: black ;
+     font-size: 30px;
+   }
+   .columnas button h1
+   {
+     font-family: 'Gaegu';
+     color: white;
+     margin: 0;
+     font-size:35px;
+   }
+   footer
+   {
+     display: flex;
+     justify-content:space-between;
+     background: black;
+   }
+   footer div
+   {
+     display: flex;
+     flex-direction: column;
+     background: gold;
+     padding: 25px;
+     justify-content: center;
+   }
+   footer div a
+   {
+     color: #b2ae3a;
+     text-decoration: none;
+     margin: 10px;
+     background: black;
+     padding: 5px;
+   }
+   @media screen and (max-width:700px)
+   {
+     .columnas
+     {
+       flex-direction: column;
+       align-items: center;
+     }
+   }
+
+   @media screen and (max-width:700px)
+   {
+    .menu ul
+    {
+      flex-direction: column;
+    }
+    .menu ul li
+    {
+      border-left: 0;
+    }
+    .columnas div
+    {
+      height: 500px
+    }
+    .columnas div button h1
+    {
+      height: auto;
+    }
+   }
+   .menu descargar
+   {
+     padding:-19px;
+   }
+   </style>
+  </head>
+  <body>
+    <header>
+      <nav class="menu">
+        <ul>
+          <li>
+            <a href="#">Contacto</a>
+          </li>
+          <li>
+            <a href="#columnas">Sobre Mi</a>
+          </li>
+          <li>
+            <a href="#">Portafolio</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="logotipo">
+        <img src="assets/yo.JPG" alt="Mi Foto" id="yo">
+        <h1>Brian Sebastian Rivas Nava</h1>
+      </div>
+    </header>
+    <section class="columnas" id= "columnas">
+      <div class="col1">
+        <h1>Estudio Ingieneria en sistemas</h1>
+        <img src="assets/ingenieria.jpg" alt="Logo Desarrollo">
+        <h3>Complete mis estudios en la Universidad Tecnologica Boliviana</h3>
+        <button type="button" name="button">
+            <h1>Conoce Mas</h1>
+        </button>
+      </div>
+      <div class="col2">
+        <h1>Profesor de Computación</h1>
+        <img src="assets/stars.jpg" alt="logo Desarrollo">
+        <h3>Estudio En Star Generator</h3>
+        <button type="button" name="button">
+          <h1>Conoce Mas</h1>
+        </button>
+      </div>
+    </section>
+    <footer>
+      <div class="Contacto">
+      <a href="tel:+591 67061916">Celular: 67061916</a>
+      <a href="https://api.whatsapp.com/send?phone=59167061916&amp:text=Hola%20Como%20estan%20estudiantes">WhatsApp: +591 67061916</a>
+      <a href="https://www.facebook.com/brian.rivas.7737">Facebook: Brian Rivas</a>
+      <a href="mailto:brianrivasnava@gmail.com">Gmail: brianrivasnava@gmail.com</a>
+    </div>
+      <div class="Curriculum">
+        <a href="assets/cv.pdf" download= "El curriculum de Brian">Descargar</a>
+      </div>
+    </footer>
+  </body>
+</html>
